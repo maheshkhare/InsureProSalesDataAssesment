@@ -2,11 +2,15 @@
 
 namespace InsureProSalesDataAssesment.Services
 {
+    /// <summary>
+    /// Service class for analyzing sales data from a text file.
+    /// Provides methods to compute total sales, monthly sales,
+    /// most popular items, top revenue items, and order statistics.
+    /// </summary>
     public class SalesAnalysisService
     {
         private List<SalesModel> _salesData;
 
-        // Constructor loads sales data automatically
         public SalesAnalysisService()
         {
             _salesData = ParseSalesData();
